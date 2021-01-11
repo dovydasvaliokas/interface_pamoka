@@ -1,7 +1,7 @@
-public class Kvadratas implements Figura
+public class Apskritimas implements Figura
 {
     // Susikuriame tuščią konstruktorių
-    public Kvadratas()
+    public Apskritimas()
     {
 
     }
@@ -13,7 +13,7 @@ public class Kvadratas implements Figura
         // Ciklas, jei pradedant nuo 1 šiuo atveju (tada ženklas bus mažiau arba lygu)
         for (int i = 1; i <= kiekKartuPiesti; i++)
         {
-            System.out.print("□");
+            System.out.print("○");
         }
         System.out.println("");
     }
@@ -21,6 +21,6 @@ public class Kvadratas implements Figura
 
     public void isvestiFigurosPavadinima()
     {
-        System.out.println("kvadratas");
+        System.out.println("apskritimas");
     }
 }
