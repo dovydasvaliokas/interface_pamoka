@@ -119,19 +119,22 @@ public class Programa
             // Jeigu visu figūrų sąrašo (Object klasės sąrašo) elementas yra Kvadratas
             if (visuFiguruSarasas.get(i) instanceof Kvadratas)
             {
-                ((Kvadratas) visuFiguruSarasas.get(i)).piestiKvadrata();
+                ((Kvadratas) visuFiguruSarasas.get(i)).piestiFigura();
+                ((Kvadratas) visuFiguruSarasas.get(i)).isvestiFigurosPavadinima();
             }
 
             // Jeigu visu figūrų sąrašo (Object klasės sąrašo) elementas yra Trikampis
             if (visuFiguruSarasas.get(i) instanceof Trikampis)
             {
                 ((Trikampis) visuFiguruSarasas.get(i)).piestiTrikampi();
+                ((Trikampis) visuFiguruSarasas.get(i)).isvestiFigurosPavadinima();
             }
 
             // Jeigu visu figūrų sąrašo (Object klasės sąrašo) elementas yra Apskritimas
             if (visuFiguruSarasas.get(i) instanceof Apskritimas)
             {
                 ((Apskritimas) visuFiguruSarasas.get(i)).piestiApskritima();
+                ((Apskritimas) visuFiguruSarasas.get(i)).isvestiFigurosPavadinima();
             }
         /*    Kvadratas kv = (Kvadratas) visuFiguruSarasas.get(0);
             kv.piestiFigura();

@@ -26,14 +26,21 @@ public class Apskritimas extends FiguraAbstrakti
         System.out.println("");
     }*/
 
+    // Naudojant antrąjį būdą - susikuriant metodus su skirtingais vardais
     public void piestiApskritima()
     {
         this.piestiFigura('○', this.kiekKartuPiesti);
     }
 
-
+    // Pilnai pakeičiamas metodas - perrašant jį skirtingu
+    @Override
     public void isvestiFigurosPavadinima()
     {
-        System.out.println("apskritimas");
+        System.out.println("ČIA YRA APSKRITIMAS IR JO METODAS PILNAI PERRAŠYTAS");
     }
+
+    /*  public void isvestiFigurosPavadinima()
+    {
+        System.out.println("apskritimas");
+    }*/
 }

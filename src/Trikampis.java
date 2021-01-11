@@ -26,13 +26,22 @@ public class Trikampis extends FiguraAbstrakti
         System.out.println();
     }*/
 
+    // Naudojant antrąjį būdą - susikuriant metodus su skirtingais vardais
     public void piestiTrikampi()
     {
         this.piestiFigura('△', this.kiekKartuPiesti);
     }
 
+    @Override
     public void isvestiFigurosPavadinima()
     {
-        System.out.println("trikampis");
+        super.isvestiFigurosPavadinima();
+        System.out.print(" trikampis");
+        System.out.println();
     }
+
+  /*  public void isvestiFigurosPavadinima()
+    {
+        System.out.println("trikampis");
+    }*/
 }

@@ -7,6 +7,8 @@ public abstract class FiguraAbstrakti implements Figura
     // 2-asis būdas: pasirašyti "bendrą" metodą šioje abstrakčioje klasėje, o po to specifinėse klasėse (Kv, Apsk, Trikamp)
     // Susikurti papildomus metodus, pvz.: piestiKvadrata(), piestiApskritima(), piestiTrikampi()
     // Tuose metoduose "kreiptumėmės" į šį pagrindinį metodą abstrakčioje klasėje
+    // 3-asis būdas: susikurti bendrą "griautinį" metodą abstrakčioje klasėje
+    // Ir specifinėse klasėse jį "overridinti" - kitaip sakant tam pačiam metodo vardui suteikti naują body (kūną/vidų)
 
     public void piestiFigura(char simbolis, int kiekKartuPiesti)
     {
@@ -16,5 +18,10 @@ public abstract class FiguraAbstrakti implements Figura
             System.out.print(simbolis);
         }
         System.out.println("");
+    }
+
+    public void isvestiFigurosPavadinima()
+    {
+        System.out.print("Šios figūros pavadinimas yra: ");
     }
 }
